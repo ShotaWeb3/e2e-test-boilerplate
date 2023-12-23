@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  e2e-test-boilerplate:
+    build: .
+    env_file:
+      - .env.local
+    volumes:
+      - ..:/app

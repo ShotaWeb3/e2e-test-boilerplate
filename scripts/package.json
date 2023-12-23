@@ -1,0 +1,26 @@
+{
+  "name": "e2e-test-boilerplate",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild index.ts --bundle --platform=node --bundle --outfile=dist/bundle.js",
+    "test": "npx ts-node",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "puppeteer": "^21.6.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "esbuild": "^0.19.10",
+    "eslint": "^8.56.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules
+.env.local
+.env
+*.png
+*.jpg
+dist
+.DS_Store
+Thumbs.db
+yarn-error.log
+cdk.out
+cdk.context.json
