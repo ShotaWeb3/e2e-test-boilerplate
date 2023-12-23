@@ -12,8 +12,10 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
     unzip awscliv2.zip && \
     ./aws/install
 
-RUN yarn add -g puppeteer aws-cdk@2.115.0 && \
+RUN yarn global add puppeteer aws-cdk@2.115.0 && \
     npx puppeteer browser install chrome
+
+ENV PATH="/usr/local/bin:${PATH}"
 
 WORKDIR /app
 
