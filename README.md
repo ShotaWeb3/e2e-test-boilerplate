@@ -8,11 +8,11 @@
 ## Creation of an env file
 $ cd docker
 $ touch .env.local
-APP_ENV=local
-APP_NAME= {YOUR_PROJECT_NAME}
-LOG_LEVEL=info
-CDK_DEFAULT_ACCOUNT={YOUR_AWS_ACCOUNT}
-CDK_DEFAULT_REGION={YOUR_AWS_REGION}
+$ echo APP_ENV=local >> .env.local
+$ echo APP_NAME={YOUR_PROJECT_NAME} >> .env.local
+$ echo LOG_LEVEL=info >> .env.local
+$ echo CDK_DEFAULT_ACCOUNT={YOUR_AWS_ACCOUNT} >> .env.local
+$ echo CDK_DEFAULT_REGION={YOUR_AWS_REGION} >> .env.local
 
 ## Installation of node_modules 
 $ docker compose up -d
